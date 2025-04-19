@@ -1,6 +1,7 @@
 type StatusProps = {
     status: 'loading' | 'success' | 'error'
 }
+// props take in status property that only takes in the defined values
 
 export const Status = (props: StatusProps) => {
     let message 
