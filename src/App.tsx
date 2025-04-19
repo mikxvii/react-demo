@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 // Import components from components folder 
-import { Greet } from './components/Greet';
-import { Person } from './components/Person'
-import { PersonList } from './components/PersonList';
-import { Status } from './components/Status'
-import { Heading } from './components/Heading'
-import { Oscar } from './components/Oscar'
-import { Button } from './components/Button'
-import { Input } from './components/Input'
-
+import { Greet } from './components/components4.18/Greet';
+import { Person } from './components/components4.18/Person'
+import { PersonList } from './components/components4.18/PersonList';
+import { Status } from './components/components4.18/Status'
+import { Heading } from './components/components4.18/Heading'
+import { Oscar } from './components/components4.18/Oscar'
+import { Button } from './components/components4.18/Button'
+import { Input } from './components/components4.18/Input'
+import { Container } from './components/Container'
 
 // Entry point in react app
 function App() {
@@ -75,6 +75,8 @@ function App() {
         />
       {/* Input Component w/ event prop (single property) */}
       <Input value='' handleChange={(event) => console.log(event)}/>
+      {/* Container Component w/ styles prop */}
+      <Container styles={{ border: '1px solid black', padding: '1rem' }}/>
     </div>
   ); 
 }
