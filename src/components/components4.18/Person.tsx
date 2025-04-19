@@ -2,12 +2,7 @@
 // param that is of type object,
 // with two properties 'first' and 'last'
 // that are both of type string
-type PersonProps = {
-    name : {
-        first: string
-        last: string
-    }
-}
+import { PersonProps } from '../Person.types'
 
 // export const Person header for any component
 // inside the params field, is the type of props,

@@ -1,8 +1,6 @@
+import { Name } from '../Person.types'
 type PersonListProps = {
-    names: {
-        first: string
-        last: string
-    }[]
+    names: Name[]
 }
 // props has names list with first and last properties of type string
 
