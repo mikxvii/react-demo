@@ -6,10 +6,10 @@ type CounterState = {
     count: number
 }
 
-type CounterAction = {
-    type: 'increment' | 'decrement' | 'reset'
-    payload?: number
-}
+// type CounterAction = {
+//     type: 'increment' | 'decrement' | 'reset'
+//     payload?: number
+// }
 
 type UpdateAction = {
     type: 'increment' | 'decrement'
