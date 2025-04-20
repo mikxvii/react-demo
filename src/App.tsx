@@ -17,6 +17,7 @@ import { User } from './components/context/User';
 import { Counter } from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 // Entry point in react app
 function App() {
@@ -96,6 +97,35 @@ function App() {
       <Counter message='the count value is'/>
 
       <Private isLoggedIn={true} component={Profile} />
+
+      {/* <List
+        items={['Batman', 'Superman', 'Wonder Woman']}
+        onClick={(item) => console.log(item)}
+      />
+      <List
+        items={[1, 5, 7, 8]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            first: "Bruce ",
+            last: "Wayne"
+          },
+          {
+            id: 2,
+            first: "Michael",
+            last: "Jackson"
+          },
+          {
+            id: 3,
+            first: "Princess",
+            last: "Diana"
+          }
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   ); 
 }
