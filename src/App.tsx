@@ -21,6 +21,7 @@ import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber'
 import { Toast } from './components/templateliterals/Toast'
 import { CustomButton } from './components/html/Button'
+import { Text } from './components/polymorphic/Text'
 
 // Entry point in react app
 function App() {
@@ -137,6 +138,16 @@ function App() {
       <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
         Primary Button
       </CustomButton>
+
+      <Text as='h1' size='large'>
+        Heading
+      </Text>
+      <Text as='p' size='medium'>
+        Paragraph
+      </Text>
+      <Text as='label' htmlFor='someId' size='small' color='secondary'>
+        Label
+      </Text>
     </div>
   ); 
 }
