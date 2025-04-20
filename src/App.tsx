@@ -14,6 +14,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
+import { Counter } from './components/class/Counter';
 
 // Entry point in react app
 function App() {
@@ -89,6 +90,8 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+
+      <Counter message='the count value is'/>
     </div>
   ); 
 }
