@@ -10,6 +10,8 @@ import { Oscar } from './components/components4.18/Oscar'
 import { Button } from './components/components4.18/Button'
 import { Input } from './components/components4.18/Input'
 import { Container } from './components/Container'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import { Box } from './components/context/Box'
 
 // Entry point in react app
 function App() {
@@ -77,6 +79,10 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event)}/>
       {/* Container Component w/ styles prop */}
       <Container styles={{ border: '1px solid black', padding: '1rem' }}/>
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   ); 
 }
