@@ -15,6 +15,8 @@ import { Box } from './components/context/Box'
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
 import { Counter } from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 // Entry point in react app
 function App() {
@@ -92,6 +94,8 @@ function App() {
       </UserContextProvider>
 
       <Counter message='the count value is'/>
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   ); 
 }
